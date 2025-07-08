@@ -84,7 +84,7 @@
                 数発（13日23時 例大祭終了時に打ち上げ）
               </dd>
               <dt>
-                露店
+                出店
               </dt>
               <dd>
                 有
@@ -586,7 +586,7 @@
 
     /*スポット 詳細ボタン */
     .sakuraArea .detailBtn{
-      display: block;
+      display: flex;
 	    text-align: center;
 	    text-decoration: none;
 	    width: 200px;
@@ -598,8 +598,16 @@
 	    color: var(--color-white);
 	    transition: 0.25s;
     }
+    .sakuraArea .detailBtn::after{
+      content: '\f04b';
+      width: 20px;
+      aspect-ratio: 1/1;
+      font-family: 'FontAwesome';
+      font-weight: 900; 
+    }
     .sakuraArea .detailBtn:hover {
 	    color: var(--ttl-color-gold);
 	    background: var(--color-white);
       opacity: unset;
-    }</style>
+    }
+    </style>
